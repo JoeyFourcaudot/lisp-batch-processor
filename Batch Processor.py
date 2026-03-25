@@ -167,8 +167,8 @@ class LispBatchProcessorApp:
         status_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.status_text.config(yscrollcommand=status_scrollbar.set)
 
-        # Use resource_path to correctly load the gear image.
-        gear_img_path = resource_path("images/gear.png")
+        # Use resource_path to correctly load the Nordmin logo.
+        gear_img_path = resource_path("logo\\Logo-Blue.png")
         try:
             gear_img =  Image.open(gear_img_path)
             gear_img = gear_img.resize((24, 24), Image.Resampling.LANCZOS)
